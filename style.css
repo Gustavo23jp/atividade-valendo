@@ -1,0 +1,247 @@
+/* =========================
+   ESTILOS BASE
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+header {
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    color: #e74c3c;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* NAVEGAÇÃO */
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 0;
+    transition: 0.3s;
+}
+
+
+/* EFEITO DO MENU */
+
+nav a:hover {
+    color: #e74c3c;
+}
+
+
+/* =========================
+   SEÇÃO DE PLANOS
+========================= */
+
+#planos {
+    background-color: #f4f4f4;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card-plano {
+    background: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 8px 20px #cccccc;
+    transition: 0.3s;
+}
+
+.card-plano:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px #bbbbbb;
+}
+
+
+/* =========================
+   CARD DESTACADO
+========================= */
+
+.card-plano.destaque {
+    border: 2px solid #e74c3c;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px #e6b0aa;
+}
+
+.card-plano.destaque:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+
+/* =========================
+   NOVO ESTILO DE CARD
+========================= */
+
+.card-plano.moderno {
+    background: #222;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 35px;
+    width: 300px;
+    box-shadow: 0 10px 25px #999999;
+    transition: 0.3s;
+}
+
+.card-plano.moderno:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px #888888;
+}
+
+
+/* =========================
+   PREÇO
+========================= */
+
+.preco {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 20px 0;
+}
+
+.preco span {
+    font-size: 0.5em;
+    color: #777;
+}
+
+
+/* =========================
+   PREÇO DO CARD MODERNO
+========================= */
+
+.card-plano.moderno .preco {
+    color: #e74c3c;
+}
+
+.card-plano.moderno .preco span {
+    color: #cccccc;
+}
+
+
+/* =========================
+   LISTA
+========================= */
+
+.card-plano ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.card-plano ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.card-plano.moderno ul li {
+    border-bottom: 1px solid #444;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn-plano {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn-plano:hover {
+    background: #e74c3c;
+}
+
+.card-plano.destaque .btn-plano {
+    background: #e74c3c;
+}
+
+.card-plano.moderno .btn-plano {
+    background: #e74c3c;
+}
+
+.card-plano.moderno .btn-plano:hover {
+    background: #fff;
+    color: #333;
+}
+
+
+/* =========================
+   RESPONSIVIDADE DO MENU
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+}
